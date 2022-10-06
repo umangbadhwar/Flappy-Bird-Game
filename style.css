@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
 }
 .background {
 	height: 100vh;
@@ -20,6 +19,8 @@
 	top: 40vh;
 	left: 30vw;
 	z-index: 100;
+	border-radius: 100%;
+	filter: brightness(90%);
 }
 .pipe_sprite {
 	position: fixed;
@@ -34,33 +35,40 @@
 .message {
 	position: absolute;
 	z-index: 10;
-	color: rgb(42, 42, 42);
+	color: rgb(173, 220, 255);
 	top: 50%;
 	left: 50%;
+	font-family: 'Overpass', sans-serif;
 	font-size: 3em;
 	transform: translate(-50%, -50%);
     display: inline-block;
 	text-align: center;
 }
 .messageStyle{
-    background-color: rgb(134, 134, 134,0.90);
+	font-family: 'Overpass', sans-serif;
+    background-color: rgba(0, 21, 83, 0.9);
 	padding: 30px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	border-radius: 5%;
 }
 .score {
-	position: fixed;
+	background-color: rgba(0, 21, 83, 0.9);
+	border: 100px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 10%;
 	z-index: 5;
-	height: 5vh;
+	position: fixed;
+	justify-content: center;
 	font-size: 5vh;
-	font-weight: 50;
+	font-weight: 100;
     color: white;
 	top: 0;
 	left: 0;
 	margin: 10px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Overpass', sans-serif;
 }
 .score_val {
+	font-family: 'Overpass', sans-serif;
 	color: gold;
 	font-weight: bold;
     border: 0ch;
@@ -72,6 +80,7 @@
 		white-space: nowrap;
         justify-content: center;
         align-items: center;
+		font-family: 'Overpass', sans-serif;
 	}
     .happy{
         font-size: 50px;
@@ -79,13 +88,16 @@
         justify-content: center;
         align-items: center;
         background-color: blueviolet;
+		font-family: 'Overpass', sans-serif;
     }
 	.score{
 		font-size: 8vh;
+		font-family: 'Overpass', sans-serif;
 	}
 	.bird{
 		width: 120px;
 		height: 90px;
+
 	}
 	.pipe_sprite{
 		width: 14vw;
